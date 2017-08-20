@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Facebook Login Form</title>
+  <link rel="stylesheet" href="../../public/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+  <div class="jfHeader-subMenuBox">
+    <div class="loginBoxWrapper" style="display: none;">
+      <form action="true" id="loginForm" class="jfHeader-authForm">
+        <div class="jfHeader-authFormLine" id="loginUsername"><label for="username" class="jfHeader-authFormLabel locale">Username</label>
+          <div class="jfHeader-authFormMessage"></div><input type="text" id="username" class="jfHeader-authFormInput" autocomplete="off"></div>
+        <div class="jfHeader-authFormLine"
+          id="loginPassword"><label for="password" class="jfHeader-authFormLabel locale">Password</label>
+          <div class="jfHeader-authFormMessage"></div><input type="password" id="password" class="jfHeader-authFormInput" autocomplete="off"></div><input type="hidden"
+          name="csrf-token" id="csrf-token" value="aaa42c6f81f607578f4a27d60f0c82c7-q0qpmoj7n83timolocsu1kd451">
+        <div class="jfHeader-authFormLine hasButton"><button id="signinButton" class="jfHeader-button locale" type="submit">LOGIN</button></div>
+        <div class="jfHeader-authFormFooter">
+          <div style="float: left;">
+            <!-- react-text: 59 -->New here?
+            <!-- /react-text --><a class="jfHeader-toggleModeLink locale">Signup</a></div><a id="forgotPasswordButtonNav" class="jfHeader-toggleModeLink locale"
+            style="float: right;">Forgot password?</a></div>
+      </form>
+      <form action="true" id="forgotPasswordForm" class="jfHeader-authForm" style="display: none;">
+        <div class="jfHeader-authFormLine" id="passwordReset"><label for="resetData" class="jfHeader-authFormLabel"><!-- react-text: 65 -->Forgot Password?<!-- /react-text --><span class="jfHeader-forgetPasswordHint locale">Enter your username or email</span></label>
+          <input
+            type="text" id="resetData" class="jfHeader-authFormInput" autocomplete="off">
+            <div class="jfHeader-authFormMessage"></div>
+        </div>
+        <div class="jfHeader-authFormLine hasButton"><button id="resetPasswordButton" class="jfHeader-button locale" type="submit">Send Reset Instructions</button></div>
+        <div
+          class="jfHeader-authFormFooter"><a id="returnLoginBoxNav" class="jfHeader-toggleModeLink locale">Go back</a></div>
+    </form>
+  </div>
+  <div class="signupBoxWrapper" style="display: block;">
+    <form action="true" id="registrationForm" class="jfHeader-authForm">
+      <div class="jfHeader-formTitle">Sign Up Now!</div>
+      <div class="jfHeader-authFormLine" id="usernameField"><label for="suUsername" class="jfHeader-authFormLabel locale">Username</label>
+        <div class="jfHeader-authFormMessage"></div><input type="text" id="suUsername" class="jfHeader-authFormInput" autocomplete="off"></div>
+      <div class="jfHeader-authFormLine"
+        id="emailField"><label for="suEmail" class="jfHeader-authFormLabel locale">Email</label>
+        <div class="jfHeader-authFormMessage"></div><input type="email" id="suEmail" class="jfHeader-authFormInput" autocomplete="off"></div>
+      <div class="jfHeader-authFormLine"
+        id="passwordField"><label for="suPassword" class="jfHeader-authFormLabel locale">Password</label>
+        <div class="jfHeader-authFormMessage"></div><input type="password" id="suPassword" class="jfHeader-authFormInput" autocomplete="off"></div>
+      <div class="jfHeader-authFormLine"
+        id="passwordConfField"><label for="suPasswordConf" class="jfHeader-authFormLabel locale">Confirm Password</label>
+        <div class="jfHeader-authFormMessage"></div><input type="password" id="suPasswordConf" class="jfHeader-authFormInput" autocomplete="off"></div><input type="hidden"
+        name="csrf-token" id="csrf-token" value="aaa42c6f81f607578f4a27d60f0c82c7-q0qpmoj7n83timolocsu1kd451">
+      <div class="jfHeader-authFormLine hasButton"><button id="signupButton" class="jfHeader-button locale" type="submit">SIGN UP</button></div>
+      <div class="jfHeader-authFormFooter locale">
+        <!-- react-text: 96 -->By clicking "Create My Account" you agree our
+        <!-- /react-text --><a href="https://www.jotform.com/help/8-Terms-of-Use" target="_blank">Terms of Use</a>
+        <!-- react-text: 98 -->and
+        <!-- /react-text --><a href="https://www.jotform.com/help/9-Privacy-Policy" target="_blank">Privacy Policy</a>
+        <!-- react-text: 100 -->.
+        <!-- /react-text -->
+      </div>
+    </form>
+    <div class="jfHeader-authFormSwitch locale">
+      <!-- react-text: 102 -->Already have an account?
+      <!-- /react-text --><a class="jfHeader-toggleModeLink">Login</a></div>
+  </div>
+  </div>
+</body>
+
+</html>
